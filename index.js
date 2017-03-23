@@ -195,10 +195,10 @@ var WhenDoesClassEnd = function(){
         
         var timeToDisplay  =  (Math.floor(hoursLeft / 60) + minutesLeft ) 
         var hourToDisplay = ""
-        if (timeToDisplay > 60 ) {
-            timeToDisplay = timeToDisplay - 60
-            hourToDisplay = 1
+        if (timeToDisplay > 59 ) {
+            timeToDisplay = timeToDisplay - 59
             
+            console.log(timeToDisplay)
         }
         if (hourToDisplay != 0) {
             var colonDiv = document.getElementById('colon')
@@ -209,14 +209,20 @@ var WhenDoesClassEnd = function(){
         var timeHourDiv = document.getElementById('timerHour')
         timeHourDiv.innerHTML = hourToDisplay
 
-         
+        
         function updateClock(){
-          if (minutesLeft > 0) {
-              minutesLeft -= 1
-          }
-          timerDiv.innerHTML = minutesLeft     
+            if (timeToDisplay > 0) {
+                timeToDisplay -= 1
+                hourToDisplay = 1
+                
+            }
+        if (String(timeToDisplay).length === 1 ) {
+            timeToDisplay = '0' + timeToDisplay
+        }
+            timerDiv.innerHTML = timeToDisplay     
         }
         
+        console.log(minutesLeft)
         setInterval(updateClock, 60000)
     
         var sec = 59
