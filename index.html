@@ -1,13 +1,11 @@
-<!DOCTYPE html> 
 <html> 
     <head> 
         <title> When Does Class End</title>
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head> 
     <body> 
-        <div class="container-fluid">
-            <h1>When Does Class End??</h1>
-            <button  onclick={clickButton()}>Click me</button>
+            <h1 class="main">When Does Class End??</h1>
+            <button  onclick={clickButton()} class="button button1" >Find out now</button>
             <h1>This Class Ends In</h1>
             <div id="result"></div>
             <div id="timerHour" ></div>
@@ -15,8 +13,15 @@
             <div id="timer" ></div>
             <h1 class="large">:</h1>
             <div id="second"></div>
-            <script src="index.js"></script>
-        </div>    
-        <!-- http://jsfiddle.net/johnschult/gs3WY/ -->
+        
+        <br>
+        <div class="btn-group">
+            <button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/rn8rdi0VafXMBCvqMkl4LevRFgCFRw9yaxHgk0MQDxe407kn.jpg'" id="btn1" class="btn">Regular Schedule</button>
+            <button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/vuaSdlJP0c1jWzvU1aova743JAXjR3EKqDt7Gz9cxQbSAdnF.jpg'" id="btn2" class="btn">No School Monday Schedule</button>
+            <button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/yBSetfP2gxqp9t6utcmiZGKghZCfg0nZvRrQGEnJ1FK7rdJy.jpg'" id="btn3" class="btn">No School Friday Schedule</button>
+            <button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/hhEE2zzg11ZcKnCPu3vI2PVN9JhFh5J1WM2xDzXfng4vdUTN.jpg'" id="btn4" class="btn">Pep Rally Schedule</button>
+        </div>
+        <img id="schedulePic" src="https://1.cdn.edl.io/rn8rdi0VafXMBCvqMkl4LevRFgCFRw9yaxHgk0MQDxe407kn.jpg">
+        <script src="index.js"></script>
     </body> 
 </html>  

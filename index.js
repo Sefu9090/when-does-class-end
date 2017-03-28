@@ -197,7 +197,7 @@ var WhenDoesClassEnd = function(){
         var hourToDisplay = ""
         if (timeToDisplay > 59 ) {
             timeToDisplay = timeToDisplay - 59
-            
+            hourToDisplay = 1
             console.log(timeToDisplay)
         }
         if (hourToDisplay != 0) {
@@ -250,3 +250,5 @@ var WhenDoesClassEnd = function(){
 
 var App = WhenDoesClassEnd()
 var clickButton = App.onClick
+
+
