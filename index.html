@@ -2,11 +2,17 @@
     <head> 
         <title> When Does Class End</title>
         <link rel="stylesheet" href="style.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head> 
     <body> 
-            <h1 class="main">When Does Class End??</h1>
-            <button  onclick={clickButton()} class="button button1" >Find out now</button>
+        <div class="top">
+            <h1 class="main left">When Does</h1>
+          <div class="centre"> <img class="picture" src="http://www.simontechnology.org/pics/header.png"></div> 
+            <h1 class="main right" >Class End?</h1>
+        </div>
+            <br>
             <h1>This Class Ends In</h1>
+            <button  onclick={clickButton()} class="button button1" >Find out now</button>
             <div id="result"></div>
             <div id="timerHour" ></div>
             <div class="large" id="colon"></div>
@@ -15,13 +21,13 @@
             <div id="second"></div>
         
         <br>
-        <div class="btn-group">
-            <button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/rn8rdi0VafXMBCvqMkl4LevRFgCFRw9yaxHgk0MQDxe407kn.jpg'" id="btn1" class="btn">Regular Schedule</button>
-            <button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/vuaSdlJP0c1jWzvU1aova743JAXjR3EKqDt7Gz9cxQbSAdnF.jpg'" id="btn2" class="btn">No School Monday Schedule</button>
-            <button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/yBSetfP2gxqp9t6utcmiZGKghZCfg0nZvRrQGEnJ1FK7rdJy.jpg'" id="btn3" class="btn">No School Friday Schedule</button>
-            <button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/hhEE2zzg11ZcKnCPu3vI2PVN9JhFh5J1WM2xDzXfng4vdUTN.jpg'" id="btn4" class="btn">Pep Rally Schedule</button>
-        </div>
-        <img id="schedulePic" src="https://1.cdn.edl.io/rn8rdi0VafXMBCvqMkl4LevRFgCFRw9yaxHgk0MQDxe407kn.jpg">
+            <div class="btn-group" id="btn-group">
+                <a href="#btn-group"><button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/rn8rdi0VafXMBCvqMkl4LevRFgCFRw9yaxHgk0MQDxe407kn.jpg'" class="btn">Regular Schedule</button></a>
+                <a href="#btn-group"><button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/vuaSdlJP0c1jWzvU1aova743JAXjR3EKqDt7Gz9cxQbSAdnF.jpg'" class="btn">No School Monday Schedule</button></a>
+                <a href="#btn-group"><button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/yBSetfP2gxqp9t6utcmiZGKghZCfg0nZvRrQGEnJ1FK7rdJy.jpg'" class="btn">No School Friday Schedule</button></a>
+                <a href="#btn-group"><button onclick="document.getElementById('schedulePic').src='https://1.cdn.edl.io/hhEE2zzg11ZcKnCPu3vI2PVN9JhFh5J1WM2xDzXfng4vdUTN.jpg'" class="btn">Pep Rally Schedule</button></a>
+            </div>
+                <img  id="schedulePic" src="https://1.cdn.edl.io/rn8rdi0VafXMBCvqMkl4LevRFgCFRw9yaxHgk0MQDxe407kn.jpg">
         <script src="index.js"></script>
     </body> 
-</html>  
+</html>

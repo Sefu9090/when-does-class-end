@@ -1,10 +1,11 @@
-* {
+
+  * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  background: dodgerblue;
+  background: #7ab3da;
   text-align: center;
   color: white;
   font-family: helvetica;
@@ -26,11 +27,6 @@ body {
 #result {
   font-size: 100px
 }
-
-.main {
-  font-size: 80px;
-}
-
 .button {
   border: none;
   color: white;
@@ -41,9 +37,14 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   -webkit-transition-duration: 0.4s;
-  /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .button1 {
@@ -53,34 +54,211 @@ body {
 }
 
 .button1:hover {
-  background-color: #008CBA;
+  background-color: #4e6c81;
   color: white;
 }
-
-.btn-group .btn {
-  background-color: #E4F1FE;
-  /* Green */
-  border: 1px solid blue;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 .btn-group .btn:not(:last-child) {
-  border-right: none;
-  /* Prevent double borders */
+    border-right: none;
+    /* Prevent double borders */
+  }
+  
+  .btn-group .btn:hover {
+    background-color: #343530;
+    color: white;
+  }
+@media only screen and (min-width: 667px) {
+    /* For tablets: */
+    #schedulePic{
+      width: 90%;
+    }
+    .top{
+    text-align: center;
+    clear: both;
+    width: 100%;
+    height: 100px;
+  }
+  .main {
+    font-size: 45px;
+    position: absolute;
+  
+  }
+  .picture{
+    top: 0;
+    right: 0;
+    left:0;
+    width: 100px;
+
+    ;
+  }
+  .centre{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 250px ;
+    margin: 0 auto;
+  }
+  .right{
+    right: 0;
+    top:0;
+
+  }
+  .left{
+  margin-left: 10px;
+  }
+  .btn{
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    border-top: 2px solid #4e6c81;
+    margin: 0;
+
+  }
+
+
+}
+@media only screen and (max-width: 667px) {
+
+/* For mobile phones: */
+  [class*="col-"] {
+      width: 100%;
+  }
+  #timerHour,
+  #timer,
+  #second,
+  .large {
+    display: inline-block;
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+  }
+  #result {
+    font-size: 100px
+  }
+  .main {
+    font-size: 45px;
+  }
+  .picture{
+    width: 100px;
+  }
+  .btn {
+    width: 100%;
+  }
+
+  #schedulePic{
+    width:  100%;
+    margin-top: 0;
+  }
+  .button{
+    width: 50%;
+  }
+  .btn{
+    color: black;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    border-top: 2px solid #4e6c81;
+
+  }
+  
+  
+}
+@media only screen and (min-width: 800px) {
+  .main {
+    font-size: 55px;
+  }
+  .btn{
+    width: 24%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .main {
+    font-size: 80px;
+  }
+  .btn{
+    width: auto;
+  }
 }
 
-.btn-group .btn:hover {
-  background-color: #CF000F;
-  color: white;
+@media only screen and (orientation: portrait) {
+    body {
+        background-color: ;
+    }
 }
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: ;
+    }
+}
+@media only screen and (min-width: 1245px) {
+    /* For desktop: */
+  
+  .top{
+    text-align: center;
+    clear: both;
+    width: 100%;
+    height: 170px;
+  }
+  .main {
+    font-size: 80px;
+    position: absolute;
+  
+  }
+  .picture{
+    top: 0;
+    right: 0;
+    left:0;
+    width: 210px;
 
-#schedulePic{
-  width:  80%;
-  border-color: dodgerblue
+  }
+  .centre{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 250px ;
+    margin: 0 auto;
+  }
+  .right{
+    right: 0;
+    top:0;
+    margin-right: 50px;
+  }
+  .left{
+    margin-left: 50px;
+  }
+  #schedulePic{
+    width:  70%;
+    border-color: #4e6c81;
+    margin-top: 25px;
+  }
+  .btn-group .btn {
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #999;
+    background-color: #E4F1FE;
+    border: 1px solid #4e6c81;
+    color: black;
+    padding: 15px 32px;
+    display: inline-block;
+  }
 }
