@@ -134,7 +134,7 @@ body {
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #f1f1f1;
+    color: red;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -151,6 +151,10 @@ body {
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 150%;
+    }
+    .modal{
+      padding-top: 75px; /* Location of the box */
+
     }
 }
   
